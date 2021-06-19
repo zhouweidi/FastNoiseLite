@@ -476,6 +476,7 @@ public class FastNoiseLiteGUI : Form
 			genNoise.SetRotationType3D((FastNoiseLite.RotationType3D)RotationType3D.SelectedIndex);
 			genNoise.SetSeed((int)Seed.Value);
 			genNoise.SetFrequency((float)Frequency.Value);
+			
 			genNoise.SetFractalType((FastNoiseLite.FractalType)FractalType.SelectedIndex);
 			genNoise.SetFractalOctaves((int)FractalOctaves.Value);
 			genNoise.SetFractalLacunarity((float)FractalLacunarity.Value);
@@ -492,6 +493,7 @@ public class FastNoiseLiteGUI : Form
 			warpNoise.SetRotationType3D((FastNoiseLite.RotationType3D)DomainWarpRotationType3D.SelectedIndex);
 			warpNoise.SetDomainWarpAmp((float)DomainWarpAmplitude.Value);
 			warpNoise.SetFrequency((float)DomainWarpFrequency.Value);
+
 			warpNoise.SetFractalType((FastNoiseLite.FractalType)Enum.Parse(typeof(FastNoiseLite.FractalType), DomainWarpFractal.SelectedKey));
 			warpNoise.SetFractalOctaves((int)DomainWarpFractalOctaves.Value);
 			warpNoise.SetFractalLacunarity((float)DomainWarpFractalLacunarity.Value);
